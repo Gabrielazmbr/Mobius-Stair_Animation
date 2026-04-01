@@ -12,6 +12,12 @@ This tool demonstrates procedural modelling, rigging, and animation in Autodesk 
 
 The main goal is to explore geometry-driven animation, where a bouncing ball follows a path derived from mesh face centers and aligns its rotation to face normals to maintain correct orientation during motion.
 
+---
+
+![Final Render](media/images/Still_1.1.jpg)
+
+---
+
 ## Core Features
 
 ### Möbius Stair Generator
@@ -19,6 +25,10 @@ The main goal is to explore geometry-driven animation, where a bouncing ball fol
 - Applies extrusion, twist, and bend deformers
 - Identifies walkable / bounceable faces based on face normal direction
 - Computes ordered face centers and normals for animation control
+
+
+![Final Render](media/images/mobius_stair_process.png) 
+
 
 ### Bouncing Ball System
 - Creates a polygon sphere with a simple rig:
@@ -29,10 +39,19 @@ The main goal is to explore geometry-driven animation, where a bouncing ball fol
 - Animates translation, rotation, and scale over time
 - Aligns the ball’s orientation to surface normals using quaternion-based rotation.
 
+![Final Render](media/images/mobius_stair_process_02.png) 
+
+
 ### Animation Logic
 - Bounce arcs are computed using triangle paths `(contact → apex → contact)`
 - Squash and stretch is applied on impact and takeoff
 - Rotation continuity is preserved across frames
+
+---
+
+![Final Render](media/images/Still_1.5.jpg)
+
+---
 
 ### Project Structure
 ```text
@@ -53,6 +72,13 @@ CGI_Tools_First_Assessment/
 ## Experiments & Versions
 - Early prototypes, tests and alternative implementations that show my development process.
 - This files can be copied and paste in Maya Script Editor to see their individual results. 
+
+---
+
+![Final Render](media/images/Still_2.1.jpg)
+
+---
+
 
 ### How to Run
 1. Open Autodesk Maya.
