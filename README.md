@@ -1,4 +1,4 @@
-# CGI Tools — First Assessment
+# Möbius Stair Animation
 
 The project procedurally generates a infinite Möbius-style stair mesh and animates a bouncing ball rig that interacts with the stair surface using face normals for orientation.
 
